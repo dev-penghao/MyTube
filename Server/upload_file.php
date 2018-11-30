@@ -25,7 +25,7 @@ if (file_exists($vid)) {// 如果文件存在；If file is exists;
         $video_attributes = json_encode(_get_video_attributes($vid, $ffmpeg_path));
         getVideoCover($vid,1,$vid.".jpg");// 生成视频缩略图
         
-        $sql="insert into videos (filename,videoname,count,videoinfo) values ({$currentTime}, '{$_FILES["file"]["name"]}', 0, '{$video_attributes}')";
+        $sql="insert into videos (filename,videoname,count,videoinfo) values ({$currentTime}, '{$_FILES["file"]["name"]}', 0, '{$video_attributes}')";// 插入语句中的字符串要用单引号
         if ($conn->query($sql) === TRUE) {
             echo "文件上传成功";
         } else {
