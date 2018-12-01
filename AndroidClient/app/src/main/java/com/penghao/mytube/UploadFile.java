@@ -1,12 +1,9 @@
 package com.penghao.mytube;
 
+import com.zhy.http.okhttp.callback.StringCallback;
+
 import java.io.File;
 
 public interface UploadFile {
-    public void uploadFile(File file,String host,UploadCallBack callBack);
-}
-
-abstract class UploadCallBack{
-    abstract void onSuccess();
-    abstract void onFaild();
+    public void uploadFile(File file, String host, StringCallback callback);
 }

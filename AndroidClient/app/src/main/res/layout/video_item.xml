@@ -41,10 +41,10 @@
             android:id="@+id/video_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentBottom="true"
-            android:text="播放次数:31"
-            android:layout_alignParentStart="true" />
+            android:text="播放次数:" />
 
         <ImageButton
             android:id="@+id/video_about"

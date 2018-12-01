@@ -33,7 +33,7 @@ function hand_result($result){
                 'count'=>$row['count'],
                 'videoinfo'=>$row['videoinfo']
             );
-            echo json_encode($item);
+            echo json_encode($item).PHP_EOL;
         }
     }
 }
